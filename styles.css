@@ -1,0 +1,432 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Racing Sans One', sans-serif;
+}
+
+
+
+
+
+
+.topbar {
+    background: rgba(255, 255, 255, 0.754);
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between; /* Space between left, center, and right */
+    align-items: center; /* Vertical alignment */
+    z-index: 100;
+    padding: 0 20px;
+    font-size: 20px;
+}
+
+.topbar-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.topbar-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 30px;
+}
+
+
+
+.logo {
+    font-family: 'Racing Sans One', sans-serif;
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+    flex-grow: 1; /* This will push left and right items to their respective sides */
+    text-align: center;
+}
+
+.topbar-left a, .topbar-right a {
+    font-family: 'Racing Sans One', sans-serif;
+
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.topbar-left a:hover, .topbar-right a:hover, .topbar a:hover {
+    color: #373333;
+}
+
+.topbar a {
+    font-family: 'Racing Sans One', sans-serif;
+    font-size: 28px;
+    color: black;
+    text-decoration: none;
+}
+
+
+
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background-size: cover; /* Asigură-te că imaginea acoperă întreaga secțiune */
+    background-position: center; /* Poziționează imaginea la mijloc */
+    background-repeat: no-repeat; /* Evită repetarea imaginii */
+}
+
+#section1 {
+    height: 100%;
+    background-image: url('/Photos/Section1_1.jpg');
+    background-blend-mode: darken;
+    background-color: rgba(0,0,0,0.7); /* Efect de întunecare */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    background-size: cover; /* Asigură-te că imaginea acoperă întreaga secțiune */
+    background-position: center; /* Poziționează imaginea la mijloc */
+    background-repeat: no-repeat; /* Evită repetarea imaginii */
+}
+
+/* Setarea fundalului general pentru secțiunile 2, 3 și 4 */
+#section2 {
+    background-color: rgb(53, 57, 53); /* Culoare de fundal */
+    display: flex;
+    align-items: right;
+    justify-content: space-between;
+    height: 100%; /* Să acopere toată înălțimea ferestrei */
+}
+
+#section3 {
+    background-color: rgb(53, 57, 53); /* Culoare de fundal */
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    height: 100%; /* Să acopere toată înălțimea ferestrei */
+}
+
+#section4 {
+    background-color: rgb(53, 57, 53); /* Culoare de fundal */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%; /* Să acopere toată înălțimea ferestrei */
+}
+
+/* Secțiunea 2: Fundal negru, text alb și centrare */
+#section2 .content {
+    text-align: left; /* Centrează textul */
+    background-color: rgba(0, 0, 0, 0.4); /* Fundal negru */
+    color: white; /* Text alb */
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    display: flex;
+    justify-content: center; /* Centrează pe verticală */
+    align-items: left; /* Centrează pe orizontală */
+}
+
+/* Secțiunea 3: Fundal negru, text alb și centrare */
+#section3 .content {
+    text-align: cleft; /* Centrează textul */
+    background-color: rgba(255, 255, 255, 0.4); /* Fundal negru */
+    color: white; /* Text alb */
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 0 auto; /* Centrează containerul pe orizontală */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrează pe verticală */
+    align-items: left; /* Centrează pe orizontală */
+}
+
+
+
+
+
+/* Text și fundal alb transparent în partea stângă pentru secțiunea 4 */
+#section4 .content {
+    background-color: rgba(255, 255, 255, 0.0);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center; /* Schimbă alinierea textului la centru */
+    width: 50%;
+    margin: 0 auto; /* Centrează containerul pe orizontală */
+}
+
+#section2{
+    background-image: url('/Photos/Section2_1.jpg');
+    background-blend-mode: darken;
+    background-color: rgba(0,0,0,0.7); /* Efect de întunecare */
+}
+
+#section3{
+    background-image: url('/Photos/Section3_1.jpg');
+    background-blend-mode: darken;
+    background-color: rgba(0,0,0,0.6); /* Efect de întunecare */
+}
+
+/* Stil pentru imaginile din secțiunea 3 */
+#section3 .icon {
+    width: 60px; /* Ajustează dimensiunea imaginii */
+    height: 60px;
+    margin-right: 10px; /* Spațiu între imagine și text */
+    vertical-align: middle; /* Aliniere la mijloc față de text */
+}
+
+
+#section4{
+    background-image: url('/Photos/Section4_1.jpg');
+    background-blend-mode: darken;
+    background-color: rgba(0,0,0,0.4); /* Efect de întunecare */
+}
+
+/* Imaginea în partea dreaptă pentru secțiunea 4 */
+
+
+/* Stil pentru butonul Get in touch */
+#section4 button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: 	#DAA520;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Racing Sans One', sans-serif; /* Fontul dorit */
+}
+
+#section4 button:hover {
+    background-color: 	#DAA520;
+}
+
+/* Organizarea formularului */
+#section5 {
+    display: flex;
+    justify-content: center; /* Centrare orizontală */
+    align-items: center; /* Centrare verticală */
+    background-color: rgb(53, 57, 53); 
+    padding: 40px 20px; /* Adaugă spațiu în partea de sus */
+    border-radius: 10px;
+    height: 1200px /* Ajustare înălțime pentru a permite padding */
+}
+
+#section5 form {
+    display: flex;
+    flex-direction: column;
+    width: 60%; /* Formularul va ocupa 60% din lățimea paginii */
+    gap: 25px; /* Mai mult spațiu între celule */
+    align-items: center; /* Centrarea tuturor elementelor */
+}
+
+/* Stiluri pentru rândurile din formular */
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Ocupă toată lățimea formularului */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 48%; /* Câmpurile ocupă fiecare jumătate din lățimea rândului */
+}
+
+/* Stil pentru câmpurile de input */
+#section5 input, #section5 textarea {
+    padding: 15px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: 'Racing Sans One', sans-serif;
+}
+
+/* Câmpul de mesaj va fi mare și centrat */
+#section5 textarea {
+    height: 200px; /* Înălțime mărită pentru câmpul de mesaj */
+    width: 100%; /* Ocupă toată lățimea formularului */
+    max-width: 100%; /* Asigură că nu depășește lățimea */
+    align-self: center; /* Centrează câmpul de mesaj */
+}
+
+/* Stil pentru butonul Trimite */
+#section5 button {
+    padding: 15px 25px;
+    font-size: 18px;
+    background-color: 	#DAA520;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Racing Sans One', sans-serif;
+    align-self: center; /* Centrează butonul */
+}
+
+#section5 button:hover {
+    background-color: 	#DAA520;
+}
+
+/* Stil pentru etichete */
+#section5 label {
+    font-family: 'Racing Sans One', sans-serif;
+    color: white;
+    text-align: left;
+    margin-bottom: 5px; /* Spațiu între etichete și câmpuri */
+}
+
+
+
+
+
+.content {
+    display: flex;
+    flex-direction: column; 
+    justify-content: left; /* Aliniere pe orizontală */
+    align-items: center; /* Aliniere pe verticală */
+    text-align: left; /* Text centrat pe orizontală */
+    height: auto; /* Se extinde pe toată înălțimea secțiunii */
+}
+
+h1, p, ul{
+    font-family: 'Racing Sans One', sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+h2{
+    font-family: 'Racing Sans One', sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+
+
+    font-size: 45px; /* Aceeași dimensiune ca DAAS-Solution */
+    color: rgb(255, 255, 255); /* Culoare neagră */
+    text-align: center; /* Aliniere la stânga */
+    margin-left: 20px; /* Un mic spațiu de la marginea stângă */
+
+}
+
+h2 {
+
+
+    font-size: 30px; /* Aceeași dimensiune ca DAAS-Solution */
+    color: rgb(255, 255, 255); /* Culoare neagră */
+    text-align: center; /* Aliniere la stânga */
+    margin-left: 20px; /* Un mic spațiu de la marginea stângă */
+}
+
+h3 {    
+
+
+    font-size: 25px; /* Aceeași dimensiune ca DAAS-Solution */
+    color: rgb(255, 255, 255); /* Culoare neagră */
+    text-align: left; /* Aliniere la stânga */
+    margin-left: 20px; /* Un mic spațiu de la marginea stângă */
+
+}
+
+h4 {
+
+
+    font-size: 25px; /* Aceeași dimensiune ca DAAS-Solution */
+    color: rgb(255, 255, 255); /* Culoare neagră */
+    text-align: left; /* Aliniere la stânga */
+    margin-left: 20px; /* Un mic spațiu de la marginea stângă */
+
+}
+
+h5 {
+
+
+    font-size: 35px; /* Aceeași dimensiune ca DAAS-Solution */
+    color: rgb(255, 255, 255); /* Culoare neagră */
+    text-align: left; /* Aliniere la stânga */
+    margin-left: 20px; /* Un mic spațiu de la marginea stângă */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+
+}
+
+ p, ul {
+
+
+    font-size: 25px; /* Aceeași dimensiune ca DAAS-Solution */
+    color: rgb(255, 255, 255); /* Culoare neagră */
+    text-align: left; /* Aliniere la stânga */
+    margin-left: 20px; /* Un mic spațiu de la marginea stângă */
+
+}
+
+#lang-switcher {
+    display: flex;
+    align-items: center;
+}
+
+.flag-icon {
+    width: 40px; /* Ajustează dimensiunea imaginii */
+    height: 40px;
+    border-radius: 50%; /* Transformă imaginea într-un cerc */
+    object-fit: cover; /* Asigură că imaginea se încadrează corect în cerc */
+    margin-right: 10px; /* Spațiu între imagine și text */
+    display: inline-block;
+    vertical-align: middle; /* Alinierea verticală față de text */
+}
+
+
+#successMessage {
+    color: white;
+    font-family: 'Racing Sans One', sans-serif;
+    text-align: center;
+    font-size: 24px; /* Ajustează dimensiunea fontului */
+}
+
+.sectiunea2 {
+    padding: 15px;
+    width: 100%;
+    border-radius: 5px;
+
+}
+
+h6 {
+
+
+    font-size: 30px; /* Aceeași dimensiune ca DAAS-Solution */
+    color: rgb(255, 255, 255); /* Culoare neagră */
+    text-align: center; /* Aliniere la stânga */
+    margin-left: 2  0px; /* Un mic spațiu de la marginea stângă */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Reduce margin-top to bring the contact info closer to the button */
+.contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px; /* Reduced from 20px to 10px */
+}
+
+.contact-info img.contact-icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+.contact-info .contact-text {
+    font-size: 20px;
+    color: white;
+    margin-right: 10px; /* Adjusted margin for more compact alignment */
+}
+

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+
+    <meta charset="UTF-8">
+    <title>DAAS-Solution</title>
+    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Favicon pentru tab -->
+    <link rel="icon" href="/Photos/deal.ico" type="image/x-icon">
+    
+    <!-- Credit: Dealer icons created by Freepik - Flaticon -->
+    <!-- <a href="https://www.flaticon.com/free-icons/dealer" title="dealer icons">Dealer icons created by Freepik - Flaticon</a> -->
+
+
+</head>
+<body>
+    <div class="topbar">
+        <div class="topbar-left">
+            <img src="/Photos/England.jpg" alt="England Flag" class="flag-icon">
+            <a href="index.html" id="contact">English</a> <!-- Contact Link -->
+        </div>
+        <a href="index_en.html" class="logo">DAAS-Solution</a> <!-- Logo in the center -->
+        <div class="topbar-right">
+            <a href="#section4" id="contact">Contact</a> <!-- Contact Link -->
+        </div>
+    </div>
+    
+    <div class="section" id="section1">
+        <div class="content">
+            <h1 id="title1">Find the best offer for your car with us!</h1>
+        </div>
+    </div>
+    
+    <div class="section" id="section2">
+        <div class="sectiunea2">
+            <h6>Are you looking for the perfect car and you want to get the best possible price?</h6>
+            <h6>We are here to help you!</h6>
+            <h6>Do you already have an offer from a dealer?</h6>
+            <h6>Let us find an even better price for the same car!</h6>
+            <h6>You don't have an offer yet?</h6>
+            <h6>Tell us what car you want, and we will look for the most advantageous hill for you.</h6>
+        </div>
+    </div>
+    
+    <div class="section" id="section3">
+    <div class="content">
+        <h2 id="subtitle4">Why choose us?</h2>
+        <ul>
+            <li id="listItem1">
+                <img src="/Photos/save-time.png" alt="Save time icon" class="icon"> 
+                You save time and money: we deal with searches and negotiations, so that you get the best effort without effort.
+                <!-- Credit: Save time icons created by Freepik - Flaticon -->
+                <!-- <a href="https://www.flaticon.com/free-icons/save-time" title="save time icons">Save time icons created by Freepik - Flaticon</a> -->
+            </li>
+            <li id="listItem2">
+                <img src="/Photos/professional-services.png" alt="Professional services icon" class="icon"> 
+                Expertise and extended network: We have extended links and connections.We were in touch and looking for many dealers to give you the best options.
+                <!-- Credit: Professional services icons created by Prosymbols Premium - Flaticon -->
+                <!-- <a href="https://www.flaticon.com/free-icons/professional-services" title="professional services icons">Professional services icons created by Prosymbols Premium - Flaticon</a> -->
+            </li>
+            <li id="listItem3">
+                <img src="/Photos/display.png" alt="Transparency icon" class="icon"> 
+                Transparency and trust: We offer you clear and honest information throughout the process.
+                <!-- Credit: Transparent icons created by Smashicons - Flaticon -->
+                <!-- <a href="https://www.flaticon.com/free-icons/transparent" title="transparent icons">Transparent icons created by Smashicons - Flaticon</a> -->
+            </li>
+        </ul>
+    </div>
+</div>
+
+    
+    <div class="section" id="section4">
+        <div class="content">
+            <h5 id="subtitle5">Start now!</h5>
+            <p id="paragraph4">Contact us and take the first step towards purchasing the desired car at an unbeatable price.We turn your car dream into reality!</p>
+            <!-- Butonul pentru a afișa formularul -->
+            <button id="getInTouchButton" onclick="showForm()">Contact us!</button>
+
+            <div class="content" id="formContent">
+                <div class="contact-info">
+                        <img src="/Photos/Whatsapp.png" alt="WhatsApp Icon" class="contact-icon">
+                        <a href="tel:+40721208571" class="contact-text">+40721208571</a>
+                        <img src="/Photos/Mail.png" alt="Mail Icon" class="contact-icon">
+                        <a href="mailto:test@mail.com" class="contact-text">test@mail.com</a>
+                </div>
+            </div>
+
+        </div>
+
+        
+        
+    </div>
+    
+ <!-- Secțiunea 5: Formular de contact -->
+<div class="section" id="section5" style="display: none;">
+    <div class="content" id="formContent">
+        <h3>Contact us!</h3>
+        <!--AICI ESTE GOOGLE FORMS-ul-->
+        <iframe src="https://fm.addxt.com/form/?vf=1FAIpQLScR8KCHvO968FWWja10mJxOF_fJDRyKH90V3qQ1QHCJca9PFA" width="1080" height="1240" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>            <div class="contact-info">
+                <img src="/Photos/Whatsapp.png" alt="WhatsApp Icon" class="contact-icon">
+                <a href="tel:+40721208571" class="contact-text">+40721208571</a>
+                <img src="/Photos/Mail.png" alt="Mail Icon" class="contact-icon">
+                <a href="mailto:test@mail.com" class="contact-text">test@mail.com</a>
+            </div>
+            
+            
+        </form>
+    </div>
+
+    <!-- Mesaj de confirmare -->
+    <div id="successMessage" style="display: none;">
+        <h2>Your message has been successfully sent!</h2>
+    </div>
+</div>
+
+
+
+    
+
+    
+
+<script>
+    function showForm() {
+        document.getElementById('section5').style.display = 'block';
+        document.getElementById('section5').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Funcție pentru trimiterea emailului și afișarea mesajului de succes
+    function sendEmail(event) {
+        event.preventDefault();
+
+        // Colectează datele din formular
+        const nume = document.getElementById('nume').value;
+        const prenume = document.getElementById('prenume').value;
+        const email = document.getElementById('email').value;
+        const phone = document.getElementById('phone').value;
+        const message = document.getElementById('message').value;
+
+        // Trimitere email folosind mailto (simulare)
+        const emailBody = `Nume: ${nume}\nPrenume: ${prenume}\nEmail: ${email}\nTelefon: ${phone}\nMesaj: ${message}`;
+        window.location.href = 'mailto:antor.andrei@gmail.com?subject=Contact&body=' + encodeURIComponent(emailBody);
+
+        // Ascunde formularul și afișează mesajul de succes
+        document.getElementById('formContent').style.display = 'none';
+        document.getElementById('successMessage').style.display = 'block';
+    }
+</script>
+
+
+    
+</body>
+</html>
